@@ -12,7 +12,7 @@
     place-content: center;
 }
 
-.overlay:after {
+.overlay::after {
     content: 'X';
     color: #fff;
     background-color: #000;
@@ -32,7 +32,7 @@
 .overlay > figure {
     margin: 0;
     padding: 1rem;
-    border-radius: 2px;
+    border: 2px;
     border-color: white;
 }
 
