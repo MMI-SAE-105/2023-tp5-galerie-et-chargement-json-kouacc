@@ -10,6 +10,7 @@
     cursor: pointer;
     position: fixed;
     place-content: center;
+    
 }
 
 .overlay::after {
@@ -25,15 +26,14 @@
     right: 1rem;
     width: 2rem;
     height: 2rem;
-    border-color: #fff;
+    border: 2px solid #fff;
     border-radius: 50%;
 }
 
 .overlay > figure {
     margin: 0;
     padding: 1rem;
-    border: 2px;
-    border-color: white;
+    border: 2px solid #fff;
 }
 
 .overlay > figure > img {
