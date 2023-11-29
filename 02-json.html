@@ -27,6 +27,12 @@
         }
     ]
     }">
-        
+    <template x-for="obj in donnees">
+        <li>
+            <span x-text="obj.nom">Nom</span>
+            <a :href="obj.url" x-text="obj.projet">Projet</a>
+        </li>
+    </template>
+    </ul>
 </body>
 </html>
