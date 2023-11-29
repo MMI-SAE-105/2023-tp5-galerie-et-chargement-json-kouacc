@@ -1,0 +1,31 @@
+.overlay {
+}
+
+.overlay:after {
+    content: 'X';
+    color: #fff;
+    background-color: #000;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 2rem;
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    border-color: #fff;
+    border-radius: 50%;
+}
+
+.overlay > figure {
+    margin: 0;
+    padding: 1rem;
+    border-radius: 2px;
+    border-color: white;
+}
+
+.overlay > figure > img {
+    max-width: 100%;
+    height: auto;
+}
