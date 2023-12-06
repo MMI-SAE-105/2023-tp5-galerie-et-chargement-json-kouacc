@@ -8,7 +8,7 @@
     <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 <body x-data="{
-    imageaffichee: 'https://picsum.photos/id/237/400/300',
+    imageaffichee: '',
 }">
     <h1>Galerie</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat numquam sunt fuga quas nam odit eveniet, eaque ea corrupti laborum, nisi itaque. Soluta voluptate ex quam voluptates culpa fugit in!</p>
@@ -20,7 +20,6 @@
     </div>
     <h2>Choississez une image à afficher</h2>
     <div class="miniatures">
-        
         <img src="https://picsum.photos/id/236/40/60" alt="miniature chiot"
             @click="imageaffichee = 'https://picsum.photos/id/236/200/300'">
         <img src="https://picsum.photos/id/237/40/60" alt="miniature chiot"
