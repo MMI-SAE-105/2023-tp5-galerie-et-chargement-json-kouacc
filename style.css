@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@500&display=swap');
+
 .overlay {
     display: grid;
     background-color: rgba(0,0,0,0.9);
@@ -43,4 +45,58 @@
 
 img {
     cursor: pointer;
+}
+
+/* decoration de pages */
+
+body {
+    background-color: #f0f0f0;
+}
+
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.miniatures {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav > ul {
+    display: flex;
+    gap: 1rem;
+
+}
+
+nav > ul > li {
+    list-style: none;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    padding: 0.5rem;
+    color: #000;
+    font-family: 'Roboto Slab', serif;
+    background-color: #ffd803;
+    border-radius: 0.2rem;
+}
+
+p {
+    font-family: 'Roboto Slab', serif;
+    padding: 2rem;
 }
