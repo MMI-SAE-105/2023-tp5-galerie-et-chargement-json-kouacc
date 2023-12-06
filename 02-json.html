@@ -42,8 +42,8 @@
     }">
         <template x-for="resp in donnees()">
             <li>
-                <span>Nom</span>
-                <a>Projet</a>
+                <span x-text="resp.nom">Nom</span>
+                <a :href="resp.url" x-text="resp.projet">Projet</a>
             </li>
         </template>
     </ul>
