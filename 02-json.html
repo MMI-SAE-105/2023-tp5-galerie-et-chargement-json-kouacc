@@ -26,7 +26,7 @@
         url: 'https://laravel.com/',
         }
     ]
-    }">
+    }">JSON dans le document
     <template x-for="obj in donnees">
         <li>
             <span x-text="obj.nom">Nom</span>
@@ -39,7 +39,7 @@
             const resp = await fetch('donnees.json');
             return await resp.json();
         },
-    }">
+    }">JSON dans un fichier
         <template x-for="resp in donnees()">
             <li>
                 <span x-text="resp.nom">Nom</span>
