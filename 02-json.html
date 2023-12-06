@@ -9,44 +9,46 @@
 </head>
 <body>
     <h1>JSON</h1>
-    <ul x-data="{
-        donnees: [
-        {
-        nom: 'Jean',
-        projet: 'Alpine.js',
-        url: 'https://alpine.js',
-        },
-        {
-        nom: 'Maxime',
-        projet: 'Tailwind CSS',
-        url: 'https://tailwindcss.com/',
-        },
-        {
-        nom: 'Adam',
-        projet: 'Laravel',
-        url: 'https://laravel.com/',
-        }
-    ]
-    }">JSON dans le document
-    <template x-for="obj in donnees">
-        <li>
-            <span x-text="obj.nom">Nom</span>
-            <a :href="obj.url" x-text="obj.projet">Projet</a>
-        </li>
-    </template>
-    </ul>
-    <ul x-data="{
-        async donnees() {
-            const resp = await fetch('donnees.json');
-            return await resp.json();
-        },
-    }">JSON dans un fichier
-        <template x-for="resp in donnees()">
-            <li>
-                <span x-text="resp.nom">Nom</span>
-                <a :href="resp.url" x-text="resp.projet">Projet</a>
-            </li>
-        </template>
-    </ul>
+    <div class="contenu-json">
+        <ul x-data="{
+                donnees: [
+                {
+                nom: 'Jean',
+                projet: 'Alpine.js',
+                url: 'https://alpine.js',
+                },
+                {
+                nom: 'Maxime',
+                projet: 'Tailwind CSS',
+                url: 'https://tailwindcss.com/',
+                },
+                {
+                nom: 'Adam',
+                projet: 'Laravel',
+                url: 'https://laravel.com/',
+                }
+            ]
+            }">JSON dans le document
+            <template x-for="obj in donnees">
+                <li>
+                    <span x-text="obj.nom">Nom</span>
+                    <a :href="obj.url" x-text="obj.projet">Projet</a>
+                </li>
+            </template>
+        </ul>
+        <ul x-data="{
+                async donnees() {
+                    const resp = await fetch('donnees.json');
+                    return await resp.json();
+                },
+            }">JSON dans un fichier
+            <template x-for="resp in donnees()">
+                <li>
+                    <span x-text="resp.nom">Nom</span>
+                    <a :href="resp.url" x-text="resp.projet">Projet</a>
+                </li>
+            </template>
+        </ul>
+    </div>
 </body>
 </html>

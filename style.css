@@ -100,3 +100,28 @@ p {
     font-family: 'Roboto Slab', serif;
     padding: 2rem;
 }
+
+ul {
+    list-style: none;
+    font-family: 'Roboto Slab', serif;
+}
+
+.contenu-json {
+    display: flex;
+    justify-content: center;
+    gap: 7rem;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #858484;
+    transition: .25s;
+}
+
+span {
+    font-weight: bold;
+}
