@@ -40,9 +40,9 @@
             return await resp.json();
         },
     }">
-        <template>
+        <template x-for="resp in donnees()">
             <li>
-                <span></span>
+                <span>Nom</span>
                 <a>Projet</a>
             </li>
         </template>
